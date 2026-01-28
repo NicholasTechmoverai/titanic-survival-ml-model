@@ -85,7 +85,7 @@ def normalize_user_input(df, training_stats):
     return df
 
 # Compute min-max from training data (from preprocessor if needed)
-# Here we assume you saved them in preprocessor
+# i've saved them in preprocessor
 training_stats = {
     "Pclass": (preprocessor.min_max.get("Pclass", (1,3))),
     "Age": (preprocessor.min_max.get("Age", (0, 80))),
